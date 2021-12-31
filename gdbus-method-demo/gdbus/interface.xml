@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+    <interface name="com.gdbus.demo">
+        <method name="SendText">
+            <arg name="content" type="s" direction="in"/>
+            <arg name="response" type="s" direction="out"/>
+        </method>
+    </interface>
+</node>
