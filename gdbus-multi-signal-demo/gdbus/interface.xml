@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+  <interface name="com.gdbus.demo">
+    <signal name="SendSignal1">
+      <arg name="sig" type="i"/>
+    </signal>
+    <signal name="SendSignal2">
+      <arg name="sig" type="d"/>
+    </signal>
+    <signal name="SendSignal3">
+      <arg name="sig" type="s"/>
+    </signal>
+  </interface>
+</node>
