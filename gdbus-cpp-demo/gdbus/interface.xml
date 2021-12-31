@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+    <interface name="com.gdbus.demo">
+        <method name="ShowData">
+            <arg name="content" type="s" direction="in"/>
+            <arg name="response" type="s" direction="out"/>
+        </method>
+        <signal name="Complete">
+            <arg name="sig" type="s"/>
+        </signal>
+    </interface>
+</node>
