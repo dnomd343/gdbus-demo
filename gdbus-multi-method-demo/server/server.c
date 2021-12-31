@@ -6,7 +6,7 @@ static void* start_main_loop(void* args) {
 }
 
 // 接收平方计算
-static gboolean receive_num(ComGdbusDemo *object, GDBusMethodInvocation *invocation, const gint *input, gpointer user_data) {
+static gboolean receive_num(ComGdbusDemo *object, GDBusMethodInvocation *invocation, const gint input, gpointer user_data) {
     const gint num = input;
     g_print("Receive num -> %d\n", input);
     com_gdbus_demo_complete_send_int(object, invocation, num * num);
